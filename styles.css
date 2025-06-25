@@ -1,4 +1,4 @@
-/* styles.css - Versión Responsive Mejorada */
+/* styles.css */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #333;
     overflow: hidden;
-    font-size: clamp(16px, 2vw, 18px); /* Tamaño fluido */
+    font-size: 18px; /* Tamaño base aumentado */
 }
 
 .presentation-container {
@@ -31,7 +31,7 @@ body {
     opacity: 0;
     transform: translateX(100px);
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 2rem;
 }
 
 .slide.active {
@@ -63,7 +63,7 @@ body {
 }
 
 .logo {
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: 5rem; /* Aumentado de 4rem */
     font-weight: bold;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #ffd700, #ffed4e);
@@ -72,30 +72,30 @@ body {
     text-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+/* Nuevo estilo para logo como imagen */
 .logo-image {
-    max-width: min(400px, 80vw);
+    max-width: 400px;
     height: auto;
     margin-bottom: 1rem;
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 .subtitle {
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
-    margin-bottom: clamp(2rem, 5vw, 3rem);
+    font-size: 1.8rem; /* Aumentado de 1.5rem */
+    margin-bottom: 3rem;
     opacity: 0.9;
-    padding: 0 1rem;
 }
 
 .team-intro h2 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     margin-bottom: 2rem;
     color: #ffd700;
 }
 
 .team-members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -103,7 +103,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
 }
@@ -113,41 +113,39 @@ body {
 }
 
 .member i {
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     color: #ffd700;
     margin-bottom: 1rem;
 }
 
 .member h3 {
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: 1.6rem; /* Aumentado de 1.3rem */
     margin-bottom: 0.5rem;
 }
 
 .member p {
     opacity: 0.8;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-}
-
-/* Títulos principales */
-.slide-content h2 {
-    font-size: clamp(2rem, 6vw, 3rem);
-    margin-bottom: clamp(2rem, 4vw, 3rem);
-    color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    padding: 0 1rem;
+    font-size: 1.1rem; /* Añadido */
 }
 
 /* Slide 2: Problem */
+.slide-content h2 {
+    font-size: 3rem; /* Aumentado de 2.5rem */
+    margin-bottom: 3rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
 .problem-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .problem-item {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -158,49 +156,47 @@ body {
 }
 
 .problem-item i {
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     color: #e74c3c;
     margin-bottom: 1rem;
 }
 
 .problem-item h3 {
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: 1.6rem; /* Aumentado de 1.3rem */
     margin-bottom: 1rem;
     color: #2c3e50;
 }
 
 .problem-item p {
     color: #7f8c8d;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 /* Slide 3: Solution */
 .solution-hero {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: clamp(2rem, 5vw, 4rem);
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
     align-items: center;
     color: white;
 }
 
 .solution-text h3 {
-    font-size: clamp(2.5rem, 7vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     color: #ffd700;
     margin-bottom: 1rem;
 }
 
 .solution-text p {
-    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    font-size: 1.4rem; /* Aumentado de 1.2rem */
     line-height: 1.6;
     margin-bottom: 2rem;
     opacity: 0.9;
-    padding: 0 1rem;
 }
 
 .target-audience {
     display: flex;
-    flex-wrap: wrap;
-    gap: clamp(1rem, 3vw, 2rem);
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -213,22 +209,21 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    min-width: 120px;
 }
 
 .audience-item i {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     color: #ffd700;
 }
 
 .audience-item span {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 .ecosystem-diagram {
     position: relative;
-    width: min(350px, 80vw);
-    height: min(350px, 80vw);
+    width: 350px;
+    height: 350px;
     margin: 0 auto;
 }
 
@@ -237,8 +232,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: clamp(80px, 15vw, 100px);
-    height: clamp(80px, 15vw, 100px);
+    width: 100px;
+    height: 100px;
     background: linear-gradient(45deg, #ffd700, #ffed4e);
     border-radius: 50%;
     display: flex;
@@ -246,21 +241,21 @@ body {
     justify-content: center;
     font-weight: bold;
     color: #333;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: 1.3rem; /* Aumentado de 1.1rem */
     box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
     z-index: 10;
 }
 
 .ecosystem-node {
     position: absolute;
-    width: clamp(60px, 12vw, 80px);
-    height: clamp(60px, 12vw, 80px);
+    width: 80px;
+    height: 80px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: 1rem; /* Aumentado de 0.9rem */
     font-weight: bold;
     color: #333;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -295,15 +290,15 @@ body {
 /* Slide 4: Pricing */
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
 .pricing-card {
     background: white;
     border-radius: 20px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -334,20 +329,20 @@ body {
 }
 
 .pricing-card h3 {
-    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+    font-size: 1.8rem; /* Aumentado de 1.5rem */
     margin-bottom: 1rem;
     color: #2c3e50;
 }
 
 .price {
-    font-size: clamp(2.5rem, 7vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     font-weight: bold;
     color: #667eea;
     margin-bottom: 1.5rem;
 }
 
 .price span {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: 1.2rem; /* Aumentado de 1rem */
     color: #7f8c8d;
 }
 
@@ -361,7 +356,7 @@ body {
     border-bottom: 1px solid #ecf0f1;
     position: relative;
     padding-left: 2rem;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 .pricing-card li::before {
@@ -377,7 +372,7 @@ body {
     padding: 1rem;
     border-radius: 10px;
     color: #2c3e50;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 /* Slide 5: Demo */
@@ -387,7 +382,6 @@ body {
 
 .demo-tabs {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 3rem;
@@ -397,11 +391,11 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: white;
-    padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+    padding: 1rem 2rem;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: 1.3rem; /* Aumentado de 1.1rem */
     backdrop-filter: blur(10px);
 }
 
@@ -428,15 +422,15 @@ body {
 
 .feature-showcase {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .feature {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
 }
@@ -446,40 +440,40 @@ body {
 }
 
 .feature i {
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     color: #ffd700;
     margin-bottom: 1rem;
 }
 
 .feature h3 {
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: 1.6rem; /* Aumentado de 1.3rem */
     margin-bottom: 1rem;
 }
 
 .feature p {
     opacity: 0.8;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 /* Slide 6: Technology */
 .tech-stack {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-bottom: 3rem;
 }
 
 .tech-category {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .tech-category h3 {
     color: #2c3e50;
     margin-bottom: 1.5rem;
-    font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+    font-size: 1.8rem; /* Aumentado de 1.5rem */
 }
 
 .tech-items {
@@ -503,31 +497,31 @@ body {
 }
 
 .tech-item i {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     color: #667eea;
 }
 
 .tech-item span {
     font-weight: bold;
     color: #2c3e50;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: 1.2rem; /* Añadido */
 }
 
 .advantages {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     color: #2c3e50;
 }
 
 .advantages h3 {
     margin-bottom: 2rem;
-    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-size: 2.2rem; /* Aumentado de 1.8rem */
 }
 
 .advantage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
 
@@ -546,13 +540,13 @@ body {
 }
 
 .advantage i {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     color: #27ae60;
 }
 
 .advantage span {
     font-weight: bold;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 /* Slide 7: Value */
@@ -565,15 +559,15 @@ body {
 }
 
 .differentiators h3 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     margin-bottom: 2rem;
     color: #ffd700;
 }
 
 .diff-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -581,7 +575,7 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
     text-align: center;
@@ -592,38 +586,38 @@ body {
 }
 
 .diff-item i {
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     color: #ffd700;
     margin-bottom: 1rem;
 }
 
 .diff-item h4 {
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: 1.6rem; /* Aumentado de 1.3rem */
     margin-bottom: 1rem;
 }
 
 .diff-item p {
     opacity: 0.8;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 .metrics h3 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     margin-bottom: 2rem;
     color: #ffd700;
 }
 
 .metrics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
 }
 
 .metric {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: clamp(1.5rem, 3vw, 2rem);
+    padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
     transition: transform 0.3s ease;
@@ -634,14 +628,14 @@ body {
 }
 
 .metric-number {
-    font-size: clamp(2.5rem, 7vw, 3.5rem);
+    font-size: 3.5rem; /* Aumentado de 3rem */
     font-weight: bold;
     color: #ffd700;
     margin-bottom: 0.5rem;
 }
 
 .metric-label {
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    font-size: 1.2rem; /* Aumentado de 1rem */
     opacity: 0.8;
 }
 
@@ -652,21 +646,20 @@ body {
 }
 
 .closing-section h2 {
-    font-size: clamp(2rem, 6vw, 3rem);
+    font-size: 3rem; /* Aumentado de 2.5rem */
     margin-bottom: 3rem;
     color: #ffd700;
-    padding: 0 1rem;
 }
 
 .achievements h3 {
-    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-size: 2.2rem; /* Aumentado de 1.8rem */
     margin-bottom: 2rem;
 }
 
 .achievement-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -687,38 +680,37 @@ body {
 }
 
 .achievement i {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: 2.5rem; /* Aumentado de 2rem */
     color: #ffd700;
 }
 
 .achievement span {
     font-weight: bold;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    font-size: 1.1rem; /* Añadido */
 }
 
 .final-message {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: clamp(2rem, 4vw, 3rem);
+    padding: 3rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .final-message p {
-    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-size: 1.5rem; /* Aumentado de 1.3rem */
     line-height: 1.6;
     margin-bottom: 2rem;
     opacity: 0.9;
-    padding: 0 1rem;
 }
 
 .cta-button {
     background: linear-gradient(45deg, #ffd700, #ffed4e);
     color: #333;
     border: none;
-    padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+    padding: 1rem 2rem;
     border-radius: 25px;
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-size: 1.4rem; /* Aumentado de 1.2rem */
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -733,15 +725,15 @@ body {
 /* Navigation */
 .navigation {
     position: fixed;
-    bottom: clamp(1rem, 3vw, 2rem);
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 3vw, 2rem);
+    gap: 2rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 3vw, 2rem);
+    padding: 1rem 2rem;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 1000;
@@ -750,8 +742,8 @@ body {
 .nav-btn {
     background: rgba(255, 255, 255, 0.2);
     border: none;
-    width: clamp(40px, 8vw, 50px);
-    height: clamp(40px, 8vw, 50px);
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     color: white;
     cursor: pointer;
@@ -759,7 +751,6 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .nav-btn:hover {
@@ -780,7 +771,7 @@ body {
 .slide-counter {
     color: white;
     font-weight: bold;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: 1.3rem; /* Aumentado de 1.1rem */
 }
 
 /* Progress Bar */
@@ -801,48 +792,94 @@ body {
     width: 12.5%;
 }
 
-/* Breakpoints específicos para mejor control */
-@media (min-width: 768px) {
-    .solution-hero {
-        grid-template-columns: 1fr 1fr;
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Tamaño base para móviles */
     }
-}
-
-@media (max-width: 480px) {
+    
+    .slide {
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-size: 3rem; /* Ajustado para móvil */
+    }
+    
+    .logo-image {
+        max-width: 300px; /* Ajustado para móvil */
+    }
+    
+    .subtitle {
+        font-size: 1.4rem; /* Ajustado */
+    }
+    
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+    
+    .solution-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .demo-tabs {
         flex-direction: column;
         align-items: center;
     }
     
     .tab-btn {
-        width: 100%;
-        max-width: 200px;
+        width: 200px;
+        font-size: 1.1rem; /* Ajustado */
     }
     
-    .target-audience {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .audience-item {
-        width: 100%;
-        max-width: 200px;
-    }
-}
-
-/* Mejoras para pantallas muy pequeñas */
-@media (max-width: 320px) {
-    .ecosystem-diagram {
-        width: 90vw;
-        height: 90vw;
-    }
-    
-    .pricing-grid,
     .feature-showcase,
     .tech-stack,
     .diff-grid,
     .metrics-grid,
     .achievement-grid {
-        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    
+    .navigation {
+        bottom: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .slide-content h2 {
+        font-size: 2.2rem; /* Ajustado */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2.5rem; /* Ajustado */
+    }
+    
+    .logo-image {
+        max-width: 250px; /* Ajustado */
+    }
+    
+    .slide-content h2 {
+        font-size: 1.8rem; /* Ajustado */
+    }
+    
+    .member,
+    .problem-item,
+    .feature,
+    .diff-item {
+        padding: 1.5rem;
+    }
+    
+    .pricing-card {
+        padding: 1.5rem;
+    }
+    
+    .price {
+        font-size: 2.5rem; /* Ajustado */
     }
 }
